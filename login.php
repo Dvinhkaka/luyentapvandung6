@@ -37,20 +37,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   <body>
     <div class="wrapper fade-in-down">
       <div id="form-content">
-        <!-- Tabs Titles -->
         <a href="./login.php">
           <h2 class="active">Đăng nhập</h2>
         </a>
         <a href="./register.php">
           <h2 class="inactive underline-hover">Đăng ký</h2>
         </a>
-        
-        <!-- Icon -->
         <div class="fade-in first">
           <img src="./imgs/avatar.png" id="avatar" alt="User Icon" />
         </div>
 
-        <!-- Error Messages -->
         <?php if (!empty($errors)) : ?>
             <div class="error-messages">
                 <?php foreach ($errors as $error) : ?>
@@ -59,7 +55,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
         <?php endif; ?>
 
-        <!-- Login Form -->
         <form method="POST" action="">
           <input
             type="email"
@@ -78,7 +73,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
           />
           <input type="submit" class="fade-in five" value="Đăng nhập" />
         </form>
-        <!-- Remind Passowrd -->
         <div id="form-footer">
           <a class="underline-hover" href="#">Quên mật khẩu?</a>
         </div>

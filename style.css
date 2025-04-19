@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
-/* GLOBAL */
 *:focus {
     outline: none;
 }
@@ -15,7 +14,6 @@
     --secondary-color: #D3D6D8;
 }
 
-/* BASIC */
 
 html {
     background-color: var(--secondary-color);
@@ -43,9 +41,6 @@ h2 {
     color: var(--secondary-color);
 }
 
-
-
-/* STRUCTURE */
 
 .wrapper {
     display: flex;
@@ -90,9 +85,6 @@ h2.active {
     border-bottom: 2px solid var(--main-color);
 }
 
-
-
-/* FORM TYPOGRAPHY*/
 form {
     padding: 1.5rem;
 }
@@ -150,9 +142,6 @@ input[type=text]:placeholder {
     color: #cccccc;
 }
 
-/* ANIMATIONS */
-
-/* Simple CSS3 Fade-in-down Animation */
 .fade-in-down {
     animation-name: fadeInDown;
     animation-duration: 1s;
@@ -183,7 +172,6 @@ input[type=text]:placeholder {
     }
 }
 
-/* Simple CSS3 Fade-in Animation */
 @-webkit-keyframes fadeIn {
     from {
         opacity: 0;
@@ -240,8 +228,6 @@ input[type=text]:placeholder {
 .fade-in.five {
     animation-delay: 1.2s;
 }
-
-/* Simple CSS3 Fade-in Animation */
 .underline-hover:after {
     display: block;
     left: 0;
